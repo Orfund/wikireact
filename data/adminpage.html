@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WikiMM admin</title>
+    <link rel="stylesheet" href="/data/adminpage.css">
+</head>
+<body>
+
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
+<script type="text/javascript">
+    VK.init({apiId: 6621463});
+</script>
+<div id="keyinput">
+    Please login into vk to enter admin mode
+</div>
+<!-- VK Widget -->
+<div id="vk_auth"></div>
+<script type="text/javascript">
+    VK.Widgets.Auth("vk_auth", {"onAuth":function(data) {alert('user '+data['uid']+' authorized');}});
+</script>
+
+</body>
+</html>

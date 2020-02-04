@@ -6,7 +6,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@viewport {
+  width: device-width;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -55,9 +57,9 @@ code {
 .mainwrapper{
   display: flex;
   border-radius: 1rem;
-  flex: 1 0 auto;
+  flex: 1 1 auto;
   background: aliceblue;
-  padding: 1rem;
+  padding: 0.5rem;
   overflow-y: scroll;
   word-break: break-all;
 }
