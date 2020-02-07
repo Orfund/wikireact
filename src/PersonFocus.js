@@ -1,21 +1,27 @@
 import React, {Component} from "react";
+import {Comment} from "./Comment";
+import get from "./gethttp"
 
 class PersonFocus extends Component{
     constructor(props){
         super(props);
         this.state = {};
         let xhr = new XMLHttpRequest();
-        console.log(this.props.uid);
-        xhr.open("GET", `/person?uid=${this.props.uid}`);
+        xhr.open("GET", "/person?uid="+this.props.uid);
         xhr.onload = ()=>{
-            let result = JSON.parse(xhr.responseText);
-            this.setState({
-                ...result,
-                ...this.state
-            })
+          this.setState({
+              ...this.state,
+              ...JSON.parse(xhr.responseText)
+          })
         };
         xhr.send();
     }
+    updateComments = (newCommentsValue)=>{
+        this.setState({
+            ...this.state,
+            comments: this.state.comments.concat([newCommentsValue])
+        })
+    };
     render(){
 
 
@@ -28,7 +34,7 @@ class PersonFocus extends Component{
                 </div>
             </div>
             <div className="pers-desc">{this.state.text}</div>
-
+            <Comment comments={this.state.comments || []} id={this.state.uid} update={this.updateComments}/>
         </div>)
     }
 }

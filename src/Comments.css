@@ -1,0 +1,39 @@
+.comment-wrapper{
+    display: flex;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0.8rem;
+    flex-direction: column;
+    box-shadow: 0 0 10px #4ba3c7;
+    margin-top: 0.5rem;
+    width: 80vw;
+}
+
+.comment-header{
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.comments-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-block img, .comment-header img{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.comments-block textarea{
+    border: none;
+    resize: none;
+    border-radius: 0.5rem;
+    padding:0.5rem;
+    font-size: 1rem;
+}

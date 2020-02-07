@@ -1,4 +1,5 @@
 import React from "react"
+import {TextDSLEditor} from "./mmDSLtoComponent"
 
 function uploadPendingData(){
     let fileInput = document.getElementById("avatar");
@@ -21,10 +22,10 @@ let PersonEditor = (props)=>(<div className="add-wrapper">
         <input type="file" accept="image/*" id="avatar" name="ava"/>
         <input type="text" placeholder="Имя" id="name" name="name"/>
         <input type="text" placeholder="статус" id = "status" name="status"/>
-        <textarea id="textinp" name="text"></textarea>
+        <textarea id="textinp"></textarea>
     </form>
 
-    <div onClick={()=>{uploadPendingData();}}>
+    <div onClick={()=>{uploadPendingData(); props.collapse()}}>
         Submit
     </div>
 </div>);

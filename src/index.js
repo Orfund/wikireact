@@ -16,7 +16,8 @@ let menuIcon = document.querySelector(".titlewrapper > svg");
 let menu = document.querySelector(".menu");
 
 menuIcon.onmouseover = ()=>{
-  menu.style.display = "flex"
+    menu.style.display = "flex";
+
 };
 
 menu.onclick = menu.onmouseleave = ()=>{

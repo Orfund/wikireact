@@ -41,6 +41,7 @@ code {
   padding:1rem;
   font-size: 1.5rem;
   align-items: center;
+  position: sticky;
 }
 
 .titlewrapper svg{
@@ -59,7 +60,7 @@ code {
   border-radius: 1rem;
   flex: 1 1 auto;
   background: aliceblue;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem 0.5rem 1rem;
   overflow-y: scroll;
   word-break: break-all;
 }
@@ -105,4 +106,48 @@ html, body{
   max-width: 80vw;
   word-wrap: break-spaces;
   white-space: pre-wrap;
+}
+
+.toggle-profile{
+  transition: 1s;
+  transform: scaleX(-1);
+}
+
+
+#vk_auth, #trigger-profile{
+  position: absolute;
+  top:1rem;
+  right: 0;
+  margin-right: 100px;
+}
+
+#trigger-profile{
+  border-radius: 18px;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+
+
+#trigger-profile[inited="true"]{
+  fill:green;
+}
+
+.action-container{
+  display: flex;
+  flex-direction: row;
+  margin:1rem;
+}
+
+.action-container div{
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.review-cont{
+  display: flex;
+  flex-direction: column;
+  flex:1 0 auto;
 }

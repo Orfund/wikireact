@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2900bd25-8e7e-45fe-8343-05eebb3552ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/adminpage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/adminpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/vD6kgDeBImc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/CkCRpSpU-KU.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/IMG_20200203_223846_804.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/Unknown.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/cred.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AdminPanel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Comments.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/gethttp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mmDSLtoComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/prof.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/adminpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/adminpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PersonFocus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonFocus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addPerson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/addPerson.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/personnel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/personnel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,9 +37,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -39,6 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -102,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580435942651</updated>
-      <workItem from="1580435944408" duration="26133000" />
+      <workItem from="1580435944408" duration="52696000" />
     </task>
     <task id="LOCAL-00001" summary="port fix">
       <created>1580675379616</created>
@@ -116,11 +133,6 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/server.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
