@@ -10,7 +10,7 @@ let PendingReview = (props)=>(
                     <div className="personDesc">{props.persStatus}</div>
                 </div>
             </div>
-            <div className="pers-desc">{props.text}</div>
+            <div className="pers-desc"dangerouslySetInnerHTML={{__html:props.text}}></div>
 
         </div>
         <div className="action-container">
