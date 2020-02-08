@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2900bd25-8e7e-45fe-8343-05eebb3552ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/addPerson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/addPerson.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580435942651</updated>
-      <workItem from="1580435944408" duration="62136000" />
+      <workItem from="1580435944408" duration="63759000" />
     </task>
     <task id="LOCAL-00001" summary="port fix">
       <created>1580675379616</created>
@@ -144,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581125759009</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="block display">
+      <created>1581127136887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1581127136888</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +176,7 @@
     <MESSAGE value="editor" />
     <MESSAGE value="minor fix for desc editing" />
     <MESSAGE value="disabled flex for more correct behaviour on person desc" />
-    <option name="LAST_COMMIT_MESSAGE" value="disabled flex for more correct behaviour on person desc" />
+    <MESSAGE value="block display" />
+    <option name="LAST_COMMIT_MESSAGE" value="block display" />
   </component>
 </project>

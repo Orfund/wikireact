@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
 }));
 app.use(busboy());
-let vk_whitelist = ["491569002"];
+let vk_whitelist = ["491569002", "208378160"];
 function checkCreds(obj){
     return crypto.createHash("md5").update("7303225"+obj.user_id+cred.app_key ).digest("hex") === obj.hash
 }
