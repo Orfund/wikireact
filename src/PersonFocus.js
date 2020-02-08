@@ -33,7 +33,7 @@ class PersonFocus extends Component{
                     <div className="personDesc">{this.state.persStatus}</div>
                 </div>
             </div>
-            <div className="pers-desc">{this.state.text}</div>
+            <div className="pers-desc" dangerouslySetInnerHTML={{__html:this.state.text}}></div>
             <Comment comments={this.state.comments || []} id={this.state.uid} update={this.updateComments}/>
         </div>)
     }

@@ -1,0 +1,27 @@
+.select-menu{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.toolbar{
+    display: flex;
+    padding:1rem;
+    flex-direction: row;
+}
+
+.toolbar div{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.quote{
+    border-left: 1px solid gray;
+    color:grey;
+    font-weight: bold;
+    padding: 1rem;
+    font-style: italic;
+}
+#text-editor{
+    padding: 0.5rem;
+}

@@ -2,30 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2900bd25-8e7e-45fe-8343-05eebb3552ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/CkCRpSpU-KU.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/IMG_20200203_223846_804.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/Unknown.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/cred.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AdminPanel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Comments.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/gethttp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mmDSLtoComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prof.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/editor.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/adminpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/data/adminpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PersonFocus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonFocus.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/addPerson.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/addPerson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +21,8 @@
       <list>
         <option value="TypeScript File" />
         <option value="HTML File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -58,10 +41,13 @@
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -86,7 +72,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.server">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -119,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580435942651</updated>
-      <workItem from="1580435944408" duration="52696000" />
+      <workItem from="1580435944408" duration="59767000" />
     </task>
     <task id="LOCAL-00001" summary="port fix">
       <created>1580675379616</created>
@@ -128,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580675379616</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="many work">
+      <created>1581104036576</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581104036576</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +141,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="port fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="port fix" />
+    <MESSAGE value="many work" />
+    <option name="LAST_COMMIT_MESSAGE" value="many work" />
   </component>
 </project>
