@@ -101,7 +101,6 @@ html, body{
 }
 
 .pers-desc{
-  display: flex;
   flex:10 0 auto;
   max-width: 80vw;
   word-wrap: break-spaces;
