@@ -27,8 +27,8 @@ class PersonFocus extends Component{
         } else {
             let xhr = new XMLHttpRequest();
             xhr.open("POST", `/updatePerson?user_id=${vkData.uid}&hash=${vkData.hash}&uid=${this.props.uid}`);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.send("text="+document.getElementById("text-editor").innerHTML);
+            xhr.setRequestHeader('Content-Type', 'text/plain');
+            xhr.send(document.getElementById("text-editor").innerHTML);
         }
         this.setState({
             ...this.state,

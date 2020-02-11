@@ -13,6 +13,7 @@ app.use( bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
     extended: true
 }));
+app.use(bodyParser.text());
 app.use(busboy());
 let vk_whitelist = ["491569002", "208378160"];
 function checkCreds(obj){
@@ -46,11 +47,11 @@ mongoClient.connect( (err, client)=>{
         } )
     });
     app.post("/updatePerson", (req, res)=>{
-        console.log(req.body);
+        console.log(req.body, req.query);
         if(isAdmin(req.query)){
             db.collection("teachers").updateOne(
                 {uid:Number(req.query.uid)},
-                {$set: {text: req.body.text}}
+                {$set: {text: req.body}}
             );
             res.send("true");
         }else{
