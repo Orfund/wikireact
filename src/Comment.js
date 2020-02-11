@@ -21,10 +21,10 @@ class AddComment extends Component {
         this.state = {anon:true, val:""};
     }
     toggleAnon = ()=>{
-      this.setState({
-          ...this.state,
-          anon: !this.state.anon
-      })
+        this.setState({
+            ...this.state,
+            anon: !this.state.anon
+        })
     };
     uploadForm = ()=>{
         return {
@@ -33,11 +33,20 @@ class AddComment extends Component {
         }
     };
     render() {
-        let name = document.user_info.first_name ? document.user_info.first_name+" "+document.user_info.last_name : "Анонимно";
+        let vkData =JSON.parse(localStorage.getItem("vk") || '{}');
+        let name = vkData ? vkData.first_name+" "+vkData.last_name : "Анонимно";
+        console.log(vkData!=={});
         return (
             <div className="comment-wrapper" style={{boxShadow:"none"}}>
                 <div className="comment-header">
-                    <img src={!this.state.anon ? document.user_info.photo || prof : prof} onClick={this.toggleAnon}/>
+                    { vkData.photo ? (<div id="ava-wrap2" className={this.state.anon? "ava-wrap2-inactive": ""}>
+                        <div id="img-wrapper" className={ this.state.anon? "wrapper-move": "wrapper-return"}>
+                            <img id="avatar" className={this.state.anon ? "img-anon": "img-not-anon"} src={vkData.photo || prof} onClick={this.toggleAnon}/>
+                        </div>
+                    </div>) : (<img src={prof}/>)}
+
+
+
                     <div>{!this.state.anon ? name  : "Анонимно"}</div>
                 </div>
                 <textarea id="comment-input"></textarea>
@@ -50,14 +59,15 @@ class AddComment extends Component {
 
 export class Comment extends Component {
     submit = (formData)=>{
+        let vkData =JSON.parse(localStorage.getItem("vk") || '{}');
         let xhr = new XMLHttpRequest();
         let data = `uid=${this.props.id}&text=${formData.text}`;
         if(!formData.anon){
-            data+=`&img=${document.user_info.photo}&name=${document.user_info.first_name}%20${document.user_info.last_name}`;
+            data+=`&img=${vkData.photo}&name=${vkData.first_name}%20${vkData.last_name}`;
             formData = {
                 ...formData,
-                img: document.user_info.photo,
-                name: document.user_info.first_name ? document.user_info.first_name+" "+document.user_info.last_name : "Анонимно"
+                img: vkData.photo,
+                name: vkData ? vkData.first_name+" "+vkData.last_name : "Анонимно"
             };
             console.log(formData)
         }

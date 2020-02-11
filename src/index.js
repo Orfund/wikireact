@@ -15,12 +15,17 @@ serviceWorker.unregister();
 let menuIcon = document.querySelector(".titlewrapper > svg");
 let menu = document.querySelector(".menu");
 
+if(!matchMedia("(min-width: 320px) and (max-width: 480px)").matches){
+    menuIcon.style.display = "none";
+}
+
 menuIcon.onmouseover = ()=>{
     menu.style.display = "flex";
+    menu.classList.add("menu-appeared");
 
 };
 
 menu.onclick = menu.onmouseleave = ()=>{
-    menu.style.display = "none"
+    menu.classList.remove("menu-appeared");
 };
 

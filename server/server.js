@@ -45,7 +45,18 @@ mongoClient.connect( (err, client)=>{
             res.send(JSON.stringify(result))
         } )
     });
-
+    app.post("/updatePerson", (req, res)=>{
+        console.log(req.body);
+        if(isAdmin(req.query)){
+            db.collection("teachers").updateOne(
+                {uid:Number(req.query.uid)},
+                {$set: {text: req.body.text}}
+            );
+            res.send("true");
+        }else{
+            res.send("not admin");
+        }
+    });
     app.get("/getPending", (req, res)=>{
         if( isAdmin(req.query) )
             db.collection("pending").find({}).toArray( (err,result)=>{

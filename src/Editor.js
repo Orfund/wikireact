@@ -8,8 +8,9 @@ export default function setupEditor(){
     let boldBtn = document.getElementById("boldify-text");
     let quotebtn = document.getElementById("quotify");
 
-
+    console.log("started");
     let editor = document.getElementById("text-editor");
+
     quotebtn.onclick = ()=>{
         editor.innerHTML = editor.innerHTML.replace(cachedRange.toString(), `<div class="quote">“${cachedRange}”</div>`)
     };

@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 let PendingReview = (props)=>(
     <div className="adm-wrapper">
+
         <div className="pers-wrapper">
             <div className="persHDR" style={{flex:"0 0 auto"}}>
                 <img src={props.persAvatar}/>
@@ -15,15 +16,17 @@ let PendingReview = (props)=>(
         </div>
         <div className="action-container">
             <div style={{color:"red"}} onClick={()=>{
+                let data = JSON.parse(localStorage.getItem("vk"));
                 let xhr = new XMLHttpRequest();
-                xhr.open("GET", `/approveReview?user_id=${document.user_info.uid}&hash=${document.user_info.hash}&id=${props._id}&approve=false`);
+                xhr.open("GET", `/approveReview?user_id=${data.uid}&hash=${data.hash}&id=${props._id}&approve=false`);
                 xhr.send();
                 props.hideElem(props._id);
                 alert("Declined successfully");
             }}>Decline</div>
             <div style={{color:"green"}} onClick={()=>{
+                let data = JSON.parse(localStorage.getItem("vk"));
                 let xhr = new XMLHttpRequest();
-                xhr.open("GET", `/approveReview?user_id=${document.user_info.uid}&hash=${document.user_info.hash}&id=${props._id}&approve=true`);
+                xhr.open("GET", `/approveReview?user_id=${data.uid}&hash=${data.hash}&id=${props._id}&approve=true`);
                 xhr.send();
                 props.hideElem(props._id);
                 alert("Accepted successfully");
@@ -37,8 +40,8 @@ class AdminPanel extends  Component{
     constructor(props){
         super(props);
         this.state = {pending:[]};
-        let xhr = new XMLHttpRequest();
-        xhr.open("GET", `/getPending?user_id=${document.user_info.uid}&hash=${document.user_info.hash}`);
+
+        /*xhr.open("GET", `/getPending?user_id=${document.user_info.uid}&hash=${document.user_info.hash}`);
         xhr.onload = ()=>{
             console.log(xhr.responseText);
             this.setState({
@@ -46,7 +49,7 @@ class AdminPanel extends  Component{
                 pending: JSON.parse(xhr.responseText)
             })
         };
-        xhr.send();
+        xhr.send();*/
     }
     removeElement = (id)=>{
         this.setState({

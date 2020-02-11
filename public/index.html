@@ -8,47 +8,9 @@
     <meta name="theme-color" content="#000000" />
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?166"></script>
     <script>
-      document.inited = false;
-      document.user_info = {};
-      async function is_admin(){
-        let xhr = new XMLHttpRequest();
-        xhr.open("GET", `/isAdmin?user_id=${document.user_info.uid}&hash=${document.user_info.hash}`);
-        let promise = new Promise((resolve, reject)=>{
-          xhr.onload = ()=>{
-            if( xhr.responseText === "true" ){
-              resolve(true);
-            } else
-              resolve(false);
-          };
-          xhr.send();
-        });
-        return await promise;
+      document.VK = VK;
 
-      }
 
-      document.is_admin = is_admin;
-      document.init_vk = ()=>{
-        if(! document.inited){
-          VK.init({apiId: 7303225});
-          VK.Widgets.Auth("vk_auth", {"onAuth":function(data) {
-            let xhr = new XMLHttpRequest();
-            xhr.open("GET", `/checkHash?user_id=${data.uid}&hash=${data.hash}`);
-            xhr.onload = ()=>{
-                if(xhr.responseText === "true"){
-                  let pic =   document.getElementById("trigger-profile");
-                  pic.src = data.photo;
-                  pic.setAttribute("inited", "true");
-                  pic.style.border = "2px solid black";
-                  document.user_info = data;
-                }
-            };
-            xhr.send();
-
-          }});
-          document.inited = true;
-        }
-
-      }
     </script>
     <meta
       name="description"
